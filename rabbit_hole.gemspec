@@ -8,17 +8,17 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marc Schmitz"]
   spec.email         = ["marcschmitz333@gmail.com"]
 
-  spec.summary       = "Mock RabbitMQ interaction"
-  spec.description   = "Mock RabbitMQ interaction"
-  spec.homepage      = "www.rabbit-hole.com"
+  spec.summary       = "Mock RabbitMQ interaction with bunny"
+  spec.description   = "Mock RabbitMQ interaction with bunny"
+  spec.homepage      = "https://github.com/Schmitze333/rabbit-hole"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
   spec.metadata["allowed_push_host"] = "http://mygemserver.com"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "www.rabbit-hole.com"
-  spec.metadata["changelog_uri"] = "www.rabbit-hole.com/changelog"
+  spec.metadata["source_code_uri"] = "https://github.com/Schmitze333/rabbit-hole"
+  spec.metadata["changelog_uri"] = "https://github.com/Schmitze333/rabbit-hole/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "bunny", "~> 2.17"
 end
